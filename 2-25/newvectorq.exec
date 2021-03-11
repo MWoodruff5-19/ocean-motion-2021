@@ -1,0 +1,13 @@
+#!/bin/csh
+set dir = ./test/set dhdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/dynamic_height/
+set dendir = /Users/brownscholar/desktop/BridgeUp_Internship/data/density/
+set auxdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/aux/
+set outdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/omega/
+set fileinfo = {$dir}info_pr.dat
+set filedh =  {$dhdir}/dynamic_height930106.gr
+set filest =  {$dendir}/density930106.gr
+set filestm = {$auxdir}/st0/930106_st0.dat
+set filequ =  {$outdir}/u/930106_qu.gr
+set fileqv =  {$outdir}/v/930106_qv.gr
+set fileqdi = {$auxdir}/qdi/930106_qdi.gr
+./vectorq.exe << !fileinfofiledh$filestfilestm'$filequ$fileqv$fileqdi

@@ -2,13 +2,17 @@
 
 
 set dir = ./test/
+set dhdir = /Users/helenfellow/Documents/cnn_paper/data/dynamic_height/
+set dendir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/density/
+set auxdir = /Users/helenfellow/Documents/cnn_paper/data/aux/
+set outdir = /Users/helenfellow/Documents/cnn_paper/data/omega/
 set fileinfo = {$dir}info_pr.dat
-set filedh =  {$dir}dynamic_height_930106.gr
-set filest =  {$dir}density_930106.gr
-set filestm = {$dir}ss1_st0.dat
-set filequ =  {$dir}ss1a2qu.gr
-set fileqv =  {$dir}ss1a2qv.gr
-set fileqdi = {$dir}ss1a2qdi.gr
+set filedh =  {$dhdir}/nw_dh_20061115.gr
+set filest =  {$dendir}/nw_density_20061115.gr
+set filestm = {$auxdir}/st0/nw_20061115_st0.dat
+set filequ =  {$outdir}/u/nw_20061115_qu.gr
+set fileqv =  {$outdir}/v/nw_20061115_qv.gr
+set fileqdi = {$auxdir}/qdi/nw_20061115_qdi.gr
 
 ./vectorq.exe << !
 '$fileinfo'	#>>>>>Escribe info file info.dat:
@@ -18,4 +22,3 @@ set fileqdi = {$dir}ss1a2qdi.gr
 '$filequ'	#>>>>>Escribe fichero Qu:
 '$fileqv'	#>>>>>Escribe fichero Qv:
 '$fileqdi'	#>>>>>Escribe fichero Qdi:
-!

@@ -1,0 +1,13 @@
+#!/bin/csh
+set dir = ./test/set dhdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/dh/
+set dendir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/density/
+set auxdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/aux/
+set outdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/omega/
+set fileinfo = {$dir}info_pr.dat
+set filedh =  {$dhdir}/nw_dh_20210304.gr
+set filest =  {$dendir}/nw_density_20210304.gr
+set filestm = {$auxdir}/st0/nw_20210304_st0.dat
+set filequ =  {$outdir}/u/nw_20210304_qu.gr
+set fileqv =  {$outdir}/v/nw_20210304_qv.gr
+set fileqdi = {$auxdir}/qdi/nw_20210304_qdi.gr
+./vectorq.exe << !fileinfofiledh$filestfilestm'$filequ$fileqv$fileqdi
