@@ -9,7 +9,7 @@ import sys
 date = sys.argv[1]
 
 
-vectorfile = open("newvectorq.exec", "w")
+vectorfile = open("vectorq.exec", "w")
 
 
 vectorfile.write("#!/bin/csh" + "\n")
@@ -31,19 +31,19 @@ vectorfile.write("set fileqdi = {$auxdir}/qdi/" + date + "_qdi.gr" + "\n")
 
 
 vectorfile.write("./vectorq.exe << !")
-vectorfile.write("fileinfo")
-vectorfile.write("filedh")
-vectorfile.write("$filest")
-vectorfile.write("filestm")
-vectorfile.write("'$filequ")
-vectorfile.write("$fileqv")
-vectorfile.write("$fileqdi")
+vectorfile.write("fileinfo #>>>>>Escribe info file info.dat:")
+vectorfile.write("filedh #>>>>>Escribe fichero de altura Dinamica:")
+vectorfile.write("$filest #>>>>>Escribe fichero de densidad:")
+vectorfile.write("filestm #>>>>>Escribe fichero de densidad promedio:")
+vectorfile.write("'$filequ #>>>>>Escribe fichero Qu:")
+vectorfile.write("$fileqv #>>>>>Escribe fichero Qv:")
+vectorfile.write("$fileqdi #>>>>>Escribe fichero Qdi:")
 
 
 vectorfile.close()
 
 
-omegafile = open("newomegainv.exec", "w")
+omegafile = open("omegainv.exec", "w")
 
 
 #omegainv.exec file

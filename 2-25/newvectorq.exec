@@ -4,10 +4,10 @@ set dendir = /Users/brownscholar/desktop/BridgeUp_Internship/data/density/
 set auxdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/aux/
 set outdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/omega/
 set fileinfo = {$dir}info_pr.dat
-set filedh =  {$dhdir}/dynamic_height930106.gr
-set filest =  {$dendir}/density930106.gr
-set filestm = {$auxdir}/st0/930106_st0.dat
-set filequ =  {$outdir}/u/930106_qu.gr
-set fileqv =  {$outdir}/v/930106_qv.gr
-set fileqdi = {$auxdir}/qdi/930106_qdi.gr
-./vectorq.exe << !fileinfofiledh$filestfilestm'$filequ$fileqv$fileqdi
+set filedh =  {$dhdir}/dynamic_height030405.gr
+set filest =  {$dendir}/density030405.gr
+set filestm = {$auxdir}/st0/030405_st0.dat
+set filequ =  {$outdir}/u/030405_qu.gr
+set fileqv =  {$outdir}/v/030405_qv.gr
+set fileqdi = {$auxdir}/qdi/030405_qdi.gr
+./vectorq.exe << !fileinfo #>>>>>Escribe info file info.dat:filedh #>>>>>Escribe fichero de altura Dinamica:$filest #>>>>>Escribe fichero de densidad:filestm #>>>>>Escribe fichero de densidad promedio:'$filequ #>>>>>Escribe fichero Qu:$fileqv #>>>>>Escribe fichero Qv:$fileqdi #>>>>>Escribe fichero Qdi:
