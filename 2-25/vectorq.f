@@ -27,8 +27,8 @@ C     ==================================================================
       DIMENSION V(9),QU(NLMAX,NFMAX,NCMAX),QV(NLMAX,NFMAX,NCMAX),
      .QDI(NLMAX,NFMAX,NCMAX)
       CHARACTER*3,NA
-	CHARACTER*90 filedat,filedh,filest,filequ,fileqv,fileqdi
-	CHARACTER*90 filestm
+	CHARACTER*300 filedat,filedh,filest,filequ,fileqv,fileqdi
+	CHARACTER*300 filestm
 	CHARACTER*1 ans
       PI=3.14159
       RD=PI/180.
