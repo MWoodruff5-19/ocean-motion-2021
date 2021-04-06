@@ -5,12 +5,12 @@ set dendir = /Users/brownscholar/desktop/BridgeUp_Internship/data/density/
 set auxdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/aux/
 set outdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/omega/
 set fileinfo = {$dir}info_pr.dat
-set filedh =  {$dhdir}/dyheight_971231.gr
-set filest =  {$dendir}/density_971231.gr
-set filestm = {$auxdir}/st0/971231_st0.dat
-set filequ =  {$outdir}/u/971231_qu.gr
-set fileqv =  {$outdir}/v/971231_qv.gr
-set fileqdi = {$auxdir}/qdi/971231_qdi.gr
+set filedh =  {$dhdir}/geopotential171227.txt
+set filest =  {$dendir}/density171227.txt
+set filestm = {$auxdir}/st0/171227_st0.dat
+set filequ =  {$outdir}/u/171227_qu.gr
+set fileqv =  {$outdir}/v/171227_qv.gr
+set fileqdi = {$auxdir}/qdi/171227_qdi.gr
 ./vectorq.exe << !
 '$fileinfo'	#>>>>>Escribe info file info.dat:
 '$filedh' 	#>>>>>Escribe fichero de altura Dinamica:

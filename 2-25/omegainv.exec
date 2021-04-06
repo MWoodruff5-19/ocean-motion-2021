@@ -3,9 +3,9 @@ set dir = ./test/
 set fileinfo = {$dir}info_pr.dat
 set outdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/omega/
 set auxdir = /Users/brownscholar/desktop/BridgeUp_Internship/data/aux/
-set filestm = {$auxdir}/st0/971231_st0.dat
-set fileqdi = {$auxdir}/qdi/971231_qdi.gr
-set filew =   {$outdir}w/971231_ww.gr
+set filestm = {$auxdir}/st0/171227_st0.dat
+set fileqdi = {$auxdir}/qdi/171227_qdi.gr
+set filew =   {$outdir}w/171227_ww.gr
 ./omegainv.exe << !
 '$fileinfo' 	#>>>>>Escribe info file info.dat:
 '$fileqdi' 	#>>>>>Escribe fichero de Div Q:
